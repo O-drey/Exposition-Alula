@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+}
+
+/******************************HEADER*****************************/
+header{
+    background-color: #ba966a;
+    height: 150px;
+    width: 100%;
+    position: sticky;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0;
+}
+
+#header #title-expo {
+    background-color: #806648;
+    color: beige;
+    width: 40%;
+    text-align: center;
+    font-family: 'FelixTitling';
+    font-size: 14px;
+    margin: 1% 30% 5% 29%;
+}
+
+#title-expo h1 {
+    padding-top: 4px;
+}
+
+#title-expo h2 {
+    padding-bottom: 10px;
+}
+
+#dates {
+    background-color: #6b563e;
+    width: 27%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 28px;
+    margin: 0px 30% -15px 36%;
+}
+
+#dates h4 {
+    margin-bottom: 0px;
+    margin-top: -92px;
+}
+
+
+/********************************************************************************************************REMARQUES************************************************************************************************************/
+
+/****mettre le texte date au milieu (padding-top). Non il fallait utiliser line-height. Pourquoi ?
+
+
+/***Pour passer des éléments les uns au dessus des autres on peut utiliser une margin négative. Pourquoi ?
+
+
+/*******************************MAIN******************************/
+
+main {
+    margin-top: 12%;
+}
+
+/***************AVIS****************/
+.avis {
+    width: 25%;
+    height: 20%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    float: left;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.avis blockquote {
+    margin-top: 25%;
+    padding-right: 20px;
+}
+
+/************DESCRIPTION************/
+.description {
+    width: 40%;
+    height: 20%;
+    border-left: solid;
+    border-left-color: lightgrey;
+    padding-left: 45px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+/*************CAROUSEL**************/
+.caroussel {
+    width: 80%;
+    max-width: 500px;
+    height: 45%;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    right: 15%;
+    left: 30%;
+}
+
+.slides {
+    width: 600%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    scroll-snap-type:x mandatory;
+    animation: 20s sliding infinite;
+    transition: 4ms;
+}
+
+.slides slide img{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/**********animation carroussel********/
+
+@keyframes sliding{
+    0% { left: 0%; }
+    15% {left: 0%;}
+    25% { left: -100%; }
+    35% { left: -100%; }
+    50% { left: -200%; }
+    65% { left: -200%; }
+    75% { left: -300%; }
+    85% { left: -300%; }
+    100% { left: -400%; }
+}
+
+
+/***********BILLET ET RS************/
+button {
+    border: solid;
+    border-color: #ba966a;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    display: block;
+    transition: all 0.4s; /*****transition: all permet d'appliquer le même effet quand le curseur survole et quitte l'élément*****/
+    margin: 50px 40%;
+}
+
+
+button a {
+    text-decoration: none;
+    color: #ba966a;
+}
+
+button:hover {
+    background-color: #ba966a;
+    border-color: #ba966a;
+}
+
+button:hover a {
+    color: white;
+    transition: 0.4s;
+}
+
+
+.social {
+    float: right;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+a img {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+/******************************FOOTER*****************************/
+.footer {
+    background-color: #2b2c2c;
+    width: 100%;
+    height: 3%;
+    float: right;
+}
+
+/***************DAYS***************/
+.days {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 33%;
+    height: 20%;
+    color: rgb(146, 141, 141);
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+.days h3 {
+    text-align: center;
+}
+
+.days p {
+    text-align: center;
+}
+
+/*************NOCTURNES************/
+.nocturnes {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 33%;
+    height: 20%;
+    color: rgb(146, 141, 141);
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+.nocturnes h3 {
+    text-align: center;
+}
+
+.nocturnes p {
+    text-align: center;
+}
+
+.nocturnes p b {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1px;
+}
+
+/**************HOURS***************/
+.hours {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 33%;
+    height: 20%;
+    color: rgb(146, 141, 141);
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+.hours h3 {
+    text-align: center;
+}
+
+.hours p {
+    text-align: center;
+}

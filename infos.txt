@@ -1,0 +1,18 @@
+POLICES
+OpenSans
+OpenSans-Light
+OpenSans-Semibold
+icomoon : https://www.imarabe.org/sites/all/themes/dima/fonts/icomoon.ttf?dr4tfi
+Arial
+
+titre expo : Felix Titling - Regular - 19pt - interligne 22.8 - centrer
+
+COULEURS
+header (fond marron clair) :#ba956a
+header (fond marron medium):#a1836a
+header (fond marron foncé):#89715b
+boutons caroussel : #e0c59a
+billets: #bb956a
+footer : #414242
+texte footer : #c2c1c1
+texte gris clair : #a6a6a6
