@@ -1,4 +1,4 @@
-# Exposition-Alula
+# Alula
 Course : Design in Screen <br>
 Date : January to April 2020 <br>
 Members : Me <br>
